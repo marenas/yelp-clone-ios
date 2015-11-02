@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FiltersViewController.h"
+#import "YelpFilters.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, FiltersViewControllerDelegate, UISearchBarDelegate>
 
 @end
 
