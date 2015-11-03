@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		601616B71BDE040F003CE902 /* YelpBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = 601616B41BDE040F003CE902 /* YelpBusiness.m */; settings = {ASSET_TAGS = (); }; };
-		601616B81BDE040F003CE902 /* YelpClientNew.m in Sources */ = {isa = PBXBuildFile; fileRef = 601616B61BDE040F003CE902 /* YelpClientNew.m */; settings = {ASSET_TAGS = (); }; };
-		601616C11BE33EB8003CE902 /* YelpFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = 601616C01BE33EB8003CE902 /* YelpFilters.m */; settings = {ASSET_TAGS = (); }; };
-		60BB07221BD0C369002D023F /* SwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BB07211BD0C369002D023F /* SwitchCell.m */; settings = {ASSET_TAGS = (); }; };
-		60BB07251BD0C608002D023F /* FiltersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BB07241BD0C608002D023F /* FiltersViewController.m */; settings = {ASSET_TAGS = (); }; };
+		601616B71BDE040F003CE902 /* YelpBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = 601616B41BDE040F003CE902 /* YelpBusiness.m */; };
+		601616B81BDE040F003CE902 /* YelpClientNew.m in Sources */ = {isa = PBXBuildFile; fileRef = 601616B61BDE040F003CE902 /* YelpClientNew.m */; };
+		601616C11BE33EB8003CE902 /* YelpFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = 601616C01BE33EB8003CE902 /* YelpFilters.m */; };
+		60BB07221BD0C369002D023F /* SwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BB07211BD0C369002D023F /* SwitchCell.m */; };
+		60BB07251BD0C608002D023F /* FiltersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BB07241BD0C608002D023F /* FiltersViewController.m */; };
 		60E5F15D1BCB031B00048994 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E5F15C1BCB031B00048994 /* main.m */; };
 		60E5F1601BCB031B00048994 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E5F15F1BCB031B00048994 /* AppDelegate.m */; };
 		60E5F1631BCB031B00048994 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E5F1621BCB031B00048994 /* ViewController.m */; };
@@ -20,7 +20,7 @@
 		60E5F16B1BCB031B00048994 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E5F1691BCB031B00048994 /* LaunchScreen.storyboard */; };
 		60E5F1761BCB031C00048994 /* yelp_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E5F1751BCB031C00048994 /* yelp_iosTests.m */; };
 		60E5F1811BCB031C00048994 /* yelp_iosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E5F1801BCB031C00048994 /* yelp_iosUITests.m */; };
-		60E5F1941BCCB53800048994 /* BusinessCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E5F1931BCCB53800048994 /* BusinessCell.m */; settings = {ASSET_TAGS = (); }; };
+		60E5F1941BCCB53800048994 /* BusinessCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E5F1931BCCB53800048994 /* BusinessCell.m */; };
 		FC15D8E5270C3AEC0BAD3101 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4ACA815E41BBBFC27B73881 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -263,6 +263,7 @@
 				TargetAttributes = {
 					60E5F1571BCB031B00048994 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = V4K8W32KL8;
 					};
 					60E5F1701BCB031B00048994 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -507,10 +508,14 @@
 			baseConfigurationReference = 4972A0DC7C90F2A9F6DCA575 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "yelp-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.yelp-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -519,10 +524,14 @@
 			baseConfigurationReference = 5750FB26442B22CFB7E9D175 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "yelp-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.yelp-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
